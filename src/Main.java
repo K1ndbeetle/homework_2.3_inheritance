@@ -1,3 +1,4 @@
+import Transport.Bus;
 import Transport.Car;
 
 public class Main {
@@ -82,5 +83,35 @@ public class Main {
         carLada.tireSeason(8);
         System.out.println();
         System.out.println(carLada);
+
+        Bus busDaewoo = new Bus(
+                "Daewoo",
+                "BS 106",
+                2011,
+                "Корея",
+                "белый",
+                220
+        );
+
+        Bus busHiger = new Bus(
+                "Higer",
+                "KLQ 6122B",
+                2022,
+                "Китай",
+                "бронза",
+                100
+        );
+
+        Bus busSetra = new Bus(
+                "Setra",
+                "S215 HD",
+                1983,
+                "Германия",
+                "серебристый",
+                180
+        );
+
+        System.out.println();
+        System.out.println(busDaewoo + "\n" + busHiger + "\n" +  busSetra);
     }
 }
